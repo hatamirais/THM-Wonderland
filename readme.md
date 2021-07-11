@@ -63,7 +63,8 @@ ssh alice@IP
 
 ### Alice
 
-Lets see what `alice`
+Lets see what `alice` has
+
 ![alice-directory.png](img/alice-directory.png) 
 
 We have 2 interesting files called `root.txt` and a python file. Both can only be run as `root`.
