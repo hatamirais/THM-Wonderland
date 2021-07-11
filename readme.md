@@ -12,6 +12,7 @@ Topics cover in this room:
 ```bash
 nmap -sC -sV 10.10.243.9 # Change this to IP given
 ```
+
   ![nmap-scan](img\nmap-scan.png)
 
 We found port `80`, lets run `gobuster` to enumerate directory in the website
@@ -21,6 +22,7 @@ gobuster dir -w /opt/common.txt -u 10.10.243.9
 # your wordlist may be different
 ```
 While gobuster is scanning, lets open browser to see what the website has
+  
   ![web-manual-hunt-1](img\web-manual-hunt-1.png)
 
 
