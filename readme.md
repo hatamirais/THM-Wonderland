@@ -23,17 +23,21 @@ gobuster dir -w /opt/common.txt -u 10.10.243.9
 ```
 While gobuster is scanning, lets open browser to see what the website has
   
-  ![web-manual-hunt-1](img/web-manual-hunt-1.png)
+![web-manual-hunt-1](img/web-manual-hunt-1.png)
 
 
 Nothing, lets see the source page. Hit `Ctrl+U` if you are using Firefox
-  ![\web-manual-hunt-1-source-code](img/web-manual-hunt-1-source-code.png)
+
+![\web-manual-hunt-1-source-code](img/web-manual-hunt-1-source-code.png)
 
 Same. Lets see if our gobuster found something
-  ![gobuster-scan.png](img/gobuster-scan.png)
+
+![gobuster-scan.png](img/gobuster-scan.png)
 
 `/r`, interesting. Lets see what in there. Type `IP_OF_MACHINE/r`
-  ![web-manual-hunt-2.png](img/web-manual-hunt-2.png)
+ 
+![web-manual-hunt-2.png](img/web-manual-hunt-2.png)
+
 Hmm, maybe we should follow *rabbit*? Lets try access all directory with spelling rabbit. The syntax should be
 1. `IP_OF_MACHINE/r`
 2. `IP_OF_MACHINE/r/a`
@@ -42,8 +46,8 @@ Hmm, maybe we should follow *rabbit*? Lets try access all directory with spellin
 5. `IP_OF_MACHINE/r/a/b/b/i`
 6. `IP_OF_MACHINE/r/a/b/b/i`
 7. `IP_OF_MACHINE/r/a/b/b/i/t`
-8. 
-9. ![web-manual-hunt-end.png](img/web-manual-hunt-end.png)
+
+![web-manual-hunt-end.png](img/web-manual-hunt-end.png)
 
 
 Have get ourself into the *rabbit hole*? Lets we check the source code of the page. Hit `Ctrl+U` if you are using firefox
@@ -54,6 +58,7 @@ We know from Nmap scan, we have port `22` open which we can SSH into the machine
 ssh alice@IP
 ```
 ![ssh-alice.png](img/ssh-alice.png) 
+
 ***WE ARE IN***
 
 ### Alice
