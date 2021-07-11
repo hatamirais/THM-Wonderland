@@ -13,7 +13,7 @@ Topics cover in this room:
 nmap -sC -sV 10.10.243.9 # Change this to IP given
 ```
 
-  ![nmap-scan](img\nmap-scan.png)
+![nmap-scan](img/nmap-scan.png)
 
 We found port `80`, lets run `gobuster` to enumerate directory in the website
 ```bash
